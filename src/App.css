@@ -1180,6 +1180,7 @@ form {
 @media (max-width: 768px) {
   nav {
     position: fixed;
+    top: 0;
   padding: 0 10px;
   padding-bottom: 0;
   grid-column: span 3;
