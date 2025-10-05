@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PresloadedLogo from "../assets/website/presloadedLogo.png";
+import PresloadedLogo from "../assets/website/PresloadedLogo.png";
 
 const Mfooter = () => {
   const currentDate = new Date();
