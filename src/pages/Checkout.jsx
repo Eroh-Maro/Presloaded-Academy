@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import checkMarkFilled from "../assets/website/checkmark-filled.png";
@@ -6,13 +6,28 @@ import checkMark from "../assets/website/checkmark-alt.png";
 import lightbulbOutline from "../assets/website/lightbulbOutline.png";
 import wallet from "../assets/website/wallet.png";
 import Footer from "../components/Footer";
+import Mfooter from "../components/Mfooter";
 
-const LIMIT = 250; // ← adjust preview length here
+const LIMIT = 250; // preview length
 
-// collapse excessive whitespace/newlines for preview
+// --- tiny hook to watch a media query ---
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia(query);
+    const onChange = () => setMatches(mq.matches);
+    onChange(); // initial value
+    mq.addEventListener ? mq.addEventListener("change", onChange) : mq.addListener(onChange);
+    return () => {
+      mq.removeEventListener ? mq.removeEventListener("change", onChange) : mq.removeListener(onChange);
+    };
+  }, [query]);
+  return matches;
+}
+
+// collapse whitespace/newlines for preview
 const normalize = (s = "") => s.replace(/\s+/g, " ").trim();
-
-// cut at a word boundary, add ellipsis
+// cut at word boundary with ellipsis
 const smartTruncate = (s = "", n = LIMIT) => {
   if (s.length <= n) return s;
   const slice = s.slice(0, n);
@@ -30,6 +45,9 @@ const Checkout = () => {
     "Mentors to learn from who guide you with real-world insights and feedback.",
     "Like-minded community to grow with, share ideas, and support your journey.",
   ];
+
+  // is mobile (render Mfooter)
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
   // Description preview/full
   const [expanded, setExpanded] = useState(false);
@@ -162,7 +180,8 @@ const Checkout = () => {
         </section>
       )}
 
-      <Footer />
+      {/* footers */}
+      {isMobile ? <Mfooter /> : <Footer />}
     </div>
   );
 };

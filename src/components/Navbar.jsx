@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link } from "react-router-dom";
-import PresloadedLogo from "../assets/website/presloadedLogo.png"
+import PresloadedLogo from "../assets/website/PresloadedLogo.png"
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
