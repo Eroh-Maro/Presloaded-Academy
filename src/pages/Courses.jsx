@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import CourseCard from "../components/CourseCard";
-import CoursesBG from "../assets/CoursesBG.jpg";
+import CoursesBG from "../assets/coursesBG.jpg";
 import CoursesTabletBG from "../assets/CoursesTabletBG.jpg";
 import Mfooter from "../components/Mfooter";
 import Footer from "../components/Footer";
