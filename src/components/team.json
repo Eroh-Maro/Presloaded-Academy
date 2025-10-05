@@ -1,0 +1,64 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Egilegwe Precious",
+      "position": "CEO & Founder",
+      "image": "CEO.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Favour Nnamdi",
+      "position": "Chief Operating Officer",
+      "image": "COO.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Smith Faithfulness Efemena",
+      "position": "DOS & Python Tutor",
+      "image": "DOS.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Egerue Divinefavour",
+      "position": "Project Manager",
+      "image": "secretary.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Michael Johnson",
+      "position": "Full Stack Developer",
+      "image": "/images/team/michael.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Williams",
+      "position": "QA Engineer",
+      "image": "/images/team/sophia.jpg"
+    },
+    {
+      "id": 7,
+      "name": "David Miller",
+      "position": "DevOps Engineer",
+      "image": "/images/team/david.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Davis",
+      "position": "Content Strategist",
+      "image": "/images/team/olivia.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Wilson",
+      "position": "Mobile Developer",
+      "image": "/images/team/daniel.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Ava Martinez",
+      "position": "Product Designer",
+      "image": "/images/team/ava.jpg"
+    }
+  ]
+}

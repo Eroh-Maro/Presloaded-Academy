@@ -1,0 +1,7 @@
+/* index.css */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img, video { display: block; max-width: 100%; height: auto; }
+
+/* temporary guard while debugging (remove after root cause fixed) */
+body { overflow-x: clip; }

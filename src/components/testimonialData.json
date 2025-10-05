@@ -1,0 +1,40 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Chinwemba",
+      "testimony": "Presloaded Academy is a game-changer! With different courses, you'll gain valuable skills and knowledge. The supportive instructors and hands-on learning approach make it an ideal place to grow. Plus, it's a community that fosters personal growth and resilience.",
+      "image": "Chinwemba.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Okolokolo Precious Oghenevwede",
+      "testimony": "Through tech communities and creative challenges, I’ve improved my design thinking and coding skills. Now, I’m able to collaborate with others to build functional, visually appealing projects that inspire people.",
+      "image": "PRECIOUS.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Okeseni Grace Arinola",
+      "testimony": "Presloaded Academy has been a game-changer for me. Their comprehensive curriculum and expert instructors have significantly enhanced my tech skills. I've gained practical knowledge and confidence in web development. Their support and resources have been invaluable in my growth.",
+      "image": "grace.png"
+    },
+    {
+      "id": 4,
+      "name": "Ikenga Francis",
+      "testimony": "It's a privilege to have such opportunity to show my skills and experience.",
+      "image": "francis.png"
+    },
+    {
+      "id": 5,
+      "name": "Oseyomon Oseremen",
+      "testimony": "I started my tech journey with curiosity, not knowing where it would lead. At first, it was full of challenges—errors, failures, and doubts—but I refused to give up. Step by step, I grew from a beginner into someone who can create, solve problems, and inspire others through technology. Tech has given me more than skills; it has given me resilience, purpose, and the courage to dream bigger. And this is only the beginning.",
+      "image": "Oseremen.png"
+    },
+    {
+      "id": 6,
+      "name": "Omaduku Ewomazino",
+      "testimony": "My experience at Presloaded Academy has been highly innovative and rewarding, fostering both personal growth and exceptional service.",
+      "image": "Ewomazino.png"
+    }
+  ]
+}
