@@ -504,70 +504,9 @@ h1 {
   margin: 20vh 0;
 }
 
-.sliderSection {
-  position: relative;
-  width: 100%;
-  margin: 40px 0;
-  grid-column: span 3;
-}
 
-.sliderBG {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  /* Adjust as needed */
-  overflow: hidden;
-  grid-column: span 3;
-}
 
-.sliderImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
-.sliderCardsOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  align-items: center;
-  justify-content: flex-start;
-  overflow-x: auto;
-  overflow-y: hidden;
-  /* Prevent vertical scroll */
-  padding: 40px 24px;
-  box-sizing: border-box;
-  scrollbar-width: thin;
-  scrollbar-color: #034505 #eee;
-}
-
-.sliderCardsOverlay::-webkit-scrollbar {
-  height: 12px;
-}
-
-.sliderCardsOverlay::-webkit-scrollbar-thumb {
-  background: #034505;
-  border-radius: 6px;
-}
-
-.sliderCardsOverlay::-webkit-scrollbar-track {
-  background: #eee;
-  border-radius: 6px;
-}
-
-/* Make sure each card has a fixed width for horizontal scroll */
-.sliderCardsOverlay .courseCard {
-  min-width: 80%;
-  max-width: 340px;
-  height: 320px;
-  flex: 0 0 auto;
-}
 
 .JoinUsSection {
   grid-column: span 3;
@@ -1066,7 +1005,7 @@ form {
 }
 .FAQsection {
   grid-column: span 3;
-  margin: 5vh 0;
+  margin: 10vh 0;
   padding: 0 20px;
 }
 .FAQheader {
