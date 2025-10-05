@@ -366,8 +366,8 @@ h1 {
 
 .course-container {
   display: grid;
-  grid-template-rows: 2% 13% 10% 60% 10%;
-  height: 450vh;
+      grid-auto-rows: minmax(min-content, auto);
+
 }
 @media (max-width: 1025px) {
   .course-container {
@@ -387,7 +387,7 @@ h1 {
 @media (max-width: 768px) {
   .course-container {
     display: grid;
-    grid-template-rows: 1.5% 5% 4% 82% 10%;
+    grid-template-rows: 1.5% 3% 4% 82% 10%;
     height: 560vh;
   }
   .courseCardContainer {
