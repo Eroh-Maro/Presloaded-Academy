@@ -1182,6 +1182,7 @@ form {
     position: fixed;
     top: 0;
     z-index: 20;
+    background-color: whitesmoke;
   padding: 0 10px;
   padding-bottom: 0;
   grid-column: span 3;
