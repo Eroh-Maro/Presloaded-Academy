@@ -420,7 +420,7 @@ h1 {
 .courseCard {
   background-color: white;
   border-radius: 12px;
-  width: 96%;
+  width: 98%;
   height: 400px;
   box-shadow: 2px 2px 10px lightgray;
   overflow: hidden;
@@ -1179,9 +1179,7 @@ form {
 }
 @media (max-width: 768px) {
   nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: fixed;
   padding: 0 10px;
   padding-bottom: 0;
   grid-column: span 3;
@@ -1211,11 +1209,8 @@ li {
     font-size: 1.2rem;
 }
   form {
-    width: 80%;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  
+        height: 30vh;
   }
   .faq-grid {
     display: grid;
