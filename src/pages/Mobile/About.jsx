@@ -16,7 +16,7 @@ const About = () => (
       <img src={aboutUs} alt="" className="aboutPic" />
       <h2 className="aboutUsheader">About Us</h2>
     </div>
-    <section className="m-whyChoose">
+    <section className="m-whyChoose" data-aos="fade-up">
       <div className="m-whyChooseContent" >
         <h2 className="m-aboutSectionHeader">Why Choose Presloaded?</h2>
         <p className="whyChooseParagraph">
@@ -37,7 +37,7 @@ const About = () => (
     </section>
     <section className="m-who">
 
-      <div className="m-whoContent">
+      <div className="m-whoContent" data-aos="fade-left">
         <div className="whoText">
           <h2 className="aboutSectionHeader">Who is presloaded for?</h2>
           <p className="whyChooseParagraph">

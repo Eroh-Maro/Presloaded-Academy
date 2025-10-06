@@ -59,7 +59,7 @@ const Checkout = () => {
     <div className="checkout-container">
       <Navbar />
 
-      <div className="CourseheroContainer">
+      <div className="CourseheroContainer" data-aos="zoom-in-up">
         <div className="checkOutHeroHeader">
           <h2 className="introHeader">{course?.name ?? "Course"}</h2>
           <p>{course?.intro}</p>

@@ -23,7 +23,7 @@ const Courses = () => {
   return (
     <div className="course-container">
       <Navbar className="coursePageNavbar" />
-      <div className="CoursesHero">
+      <div className="CoursesHero" data-aos="zoom-in-up">
         <img
           src={isTablet ? CoursesTabletBG : CoursesBG}
           alt="Courses Hero"

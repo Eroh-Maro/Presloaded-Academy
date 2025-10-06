@@ -15,7 +15,7 @@ const About = () => (
       <img src={aboutUs} alt="" className="aboutPic" />
       <h2 className="aboutUsheader">About Us</h2>
     </div>
-    <section className="whyChoose">
+    <section className="whyChoose" data-aos="fade-up">
       <div className="whyChooseContent" >
         <h2 className="aboutSectionHeader">Why Choose Presloaded?</h2>
         <p>
@@ -39,7 +39,7 @@ const About = () => (
         <img src={whoImage} alt="" className="whoImage" />
       </div>
       <div className="whoContent">
-        <div className="whoText">
+        <div className="whoText" data-aos="fade-left">
           <h2 className="aboutSectionHeader">Who is presloaded for?</h2>
           <p>
             Anyone with an interest in technology and a genuine will to learn,
