@@ -368,13 +368,14 @@ h1 {
 
 .course-container {
   display: grid;
-      grid-auto-rows: minmax(min-content, auto);
+    grid-auto-rows: minmax(min-content, auto);
 
 }
 @media (max-width: 1025px) {
   .course-container {
     display: grid;
-      grid-auto-rows: minmax(min-content, auto);
+    grid-template-rows: 4% 12% 12% 48% 24%;
+  height: 220vh;
 
   }
   .courseCardContainer {
@@ -1125,7 +1126,7 @@ form {
   background-color: whitesmoke;
   top: 50%;
   right: 20px;
-  width: 80%;
+  width: 400px;
   box-shadow: 2px 2px 12px;
 }
 .checkout-container {
@@ -1318,7 +1319,7 @@ li {
     background-color: whitesmoke;
     top: 50%;
     right: 20px;
-      width: 80%;
+     width: 400px;
     box-shadow: 2px 2px 12px;
   }
   .learnGrid {
@@ -1346,7 +1347,7 @@ li {
       top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
-        width: 80%;
+      width: 400px;
       box-shadow: 2px 2px 12px;
     }
     .checkoutHeading2 {

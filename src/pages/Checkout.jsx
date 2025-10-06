@@ -57,7 +57,9 @@ const Checkout = () => {
 
   return (
     <div className="checkout-container">
-      <Navbar />
+      <Navbar style={{
+        height: "20%"
+      }}/>
 
       <div className="CourseheroContainer" data-aos="zoom-in-up">
         <div className="checkOutHeroHeader">
@@ -78,7 +80,7 @@ const Checkout = () => {
               style={{
                 height: "100%",
                 width: "100%",
-                maxWidth: "400px",
+                
                 marginBottom: "1rem",
                 objectFit: "cover",
               }}
