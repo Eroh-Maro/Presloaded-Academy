@@ -1336,7 +1336,8 @@ li {
   width: 30px;
 }
 .learnGrid1 {
-  width: 70%;
+  width: 100%;
+
 }
 .learnAnswer {
   margin-left: 30px;
@@ -1378,6 +1379,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  text-align: left;
   height: 80%;
   padding: 0;
   max-width: 720px;
@@ -1406,6 +1408,7 @@ li {
 @media (max-width: 480px) {
   .benefits-item {
     margin-bottom: 14px;
+    text-align: left;
   }
 }
 @media (max-width: 1025px) {
@@ -1507,6 +1510,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: left;
   height: 40%;
 }
 .check-icon {
@@ -1517,7 +1521,9 @@ li {
 .learnSection {
   grid-column: span 3;
   padding: 0 20px;
+  margin-top: 8vh;
 }
+
 /* Make the description independent of any fixed grid row/height */
 .descriptionSection {
   /* layout */
