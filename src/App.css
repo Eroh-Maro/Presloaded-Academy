@@ -1206,6 +1206,7 @@ form {
 }
 .CourseheroContainer {
   background-color: #1b201b;
+  margin-top: 5vh;
   height: 50vh;
   grid-column: span 3;
   position: relative;
@@ -1229,6 +1230,7 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(min-content, auto);
+      gap: 5vh;
 }
 .introHeader {
   font-size: 1.8rem;
