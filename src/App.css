@@ -27,9 +27,10 @@ body {
 .home-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2.5% 26% 14% 10% 11% 6% 15% 16%;
+    grid-auto-rows: minmax(min-content, auto);
+    gap: 5vh;
   width: 100%;
-  height: 380vh;
+
 }
 .benefitCardContainer {
   display: grid;
@@ -80,6 +81,8 @@ ul {
   justify-content: space-between;
   width: 50%;
   height: 100%;
+  margin: 10px 0;
+  text-align: center;
 }
 
 nav {
@@ -87,6 +90,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 30;
   padding-bottom: 0;
   background-color: whitesmoke;
   grid-column: span 3;
@@ -140,8 +146,9 @@ h2 {
 
 .HeroPic {
   min-width: 100%;
-  height: 100%;
+  height: 96vh;
   object-fit: cover;
+     margin-top: 5vh;
 }
 
 h1 {
@@ -225,8 +232,9 @@ h1 {
 
 .dropdown-menu {
   position: absolute;
+  height: 80vh;
   right: 0;
-  top: 8%;
+  top: 80%;
   background: whitesmoke;
   border-radius: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -237,6 +245,60 @@ h1 {
   flex-direction: column;
    border-radius: 0;
 }
+/* When dropdown is open, blur + dim everything behind it */
+.blur-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  z-index: 50;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+/* Optional smooth fade-out effect */
+.blur-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Make sure navbar and dropdown appear above the blur */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: whitesmoke;
+}
+
+/* Dropdown above blur overlay but below nav logo text if needed */
+.dropdown-menu {
+  position: fixed;
+  top: 8%;
+  right: 0;
+  background: whitesmoke;
+  z-index: 101;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .dropdown-menu li {
   margin: 0;
@@ -375,8 +437,8 @@ h1 {
 /* Tablet: keep your fixed template + height */
 @media (min-width: 769px) and (max-width: 1025px) {
   .course-container {
-    grid-template-rows: 4% 12% 12% 48% 24%;
-    height: 220vh;
+  grid-auto-rows: minmax(min-content, auto);
+
   }
 
   .courseCardContainer {
@@ -388,6 +450,7 @@ h1 {
     padding-bottom: 20vh;
   }
 }
+  
 
 /* Mobile: ensure auto flow by unsetting template/height */
 @media (max-width: 768px) {
@@ -410,6 +473,10 @@ h1 {
 .CoursesHeroImage {
   height: 100%;
 }
+  .CoursesHero {
+    height: 50vh;
+    margin-top: 8vh;
+  }
 .CoursesHero {
   grid-column: span 3;
   position: relative;
@@ -486,6 +553,7 @@ h1 {
 .courseCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
   gap: 80px;
   padding: 20px;
   grid-column: span 3;
@@ -496,6 +564,26 @@ h1 {
   .courseCardContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4% 26% 24% 40%;
+  height: 200vh;
+}
+.contactHeroContainer {
+   margin-top: 70px;
+}
+.contactHeroPic {
+  height: 100vh;
+  width: 100%;
+}
+.HeroPic {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+   margin-top: 5vh;
+}
+
 }
 
 /* 1 column for small screens */
@@ -503,6 +591,10 @@ h1 {
   .courseCardContainer {
     grid-template-columns: 1fr;
   }
+  .CoursesHero{
+    height: 20vh;
+    margin-top: 5vh;
+}
 }
 
 .CourseSectionHeader {
@@ -517,7 +609,7 @@ h1 {
 
 .JoinUsSection {
   grid-column: span 3;
-  height: 100%;
+  height: 110%;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -634,11 +726,11 @@ footer {
   .dropdown-menu {
     position: absolute;
     right: 0;
-    top: 6%;
+    top: 80%;
     background: whitesmoke;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    height: 80%;
+    height: 80vh;
     z-index: 100;
     list-style: none;
     display: flex;
@@ -696,13 +788,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     padding-right: 0;
   }
 
-  .CoursesHero {
-    height: 15vh;
-  }
+
   .CoursesHero img {
     height: 100%;
   }
@@ -793,8 +883,8 @@ body {
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2.5% 12.5% 16% 16% 40% 16%;
-  height: 400vh;
+ grid-auto-rows: minmax(min-content, auto);
+    gap: 5vh
 }
 .teamHeader {
   margin: 10vh 0;
@@ -804,17 +894,18 @@ body {
   .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4% 10% 12% 10% 44% 20%;
-    height: 250vh;
+
   }
 }
 .aboutContainer {
   position: relative;
   grid-column: span 3;
+  height: 60vh;
 }
 .aboutPic {
   height: 100%;
   filter: brightness(90%);
+   margin-top: 5vh;
 }
 .aboutUsheader {
   position: absolute;
@@ -932,11 +1023,12 @@ div.whoContent > a {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4% 26% 24% 40%;
-  height: 200vh;
+ grid-auto-rows: minmax(min-content, auto);
+ margin-top: 10vh;
 }
 .contactHeroContainer {
   grid-column: span 3;
+
 }
 .contactHeroPic {
   height: 100%;

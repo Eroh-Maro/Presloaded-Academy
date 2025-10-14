@@ -1,12 +1,14 @@
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(220px, 1fr));
+   grid-auto-rows: minmax(min-content, auto);
   gap: 28px;
   grid-column: span 3;
   justify-content: space-between;
-  height: 80%;
+  height: 90%;
   width: 100%;
-  background-color: whitesmoke;
+
+  background-color: rgb(250, 250, 250);
   align-items: start;
 }
 /* Medium screens (tablets) - 2 cards */
