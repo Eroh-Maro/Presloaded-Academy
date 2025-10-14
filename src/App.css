@@ -713,7 +713,7 @@ footer {
 
 .footerLinksContainer {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .copyRight {
@@ -1521,7 +1521,7 @@ li {
 .learnSection {
   grid-column: span 3;
   padding: 0 20px;
-  margin-top: 8vh;
+  margin-top: 4vh;
 }
 
 /* Make the description independent of any fixed grid row/height */
@@ -1569,4 +1569,24 @@ li {
 }
 .course-desc__toggle:hover {
   font-weight: 600;
+}
+.socialMediaLinksContainer{
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  margin-top: 50px;
+}
+.socialMediaIconContainer{
+  height: 40px;
+  width: 40px;
+}
+.socialMediaIcon{
+  height: 100%;
+  width: 100%;
+}
+.socialMediaLinks{
+  padding: 0;
+}
+.footerAnchor{
+  text-align: left;
 }

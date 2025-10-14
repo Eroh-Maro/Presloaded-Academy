@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PresloadedLogo from "../assets/website/PresloadedLogo.png";
+import instagram from "../assets/website/instagram-fill.png";
+import facebook from "../assets/website/facebook.png";
+import tiktok from "../assets/website/tiktok-solid.png";
 
 const Mfooter = () => {
   const currentDate = new Date();
@@ -40,6 +43,45 @@ const currentYear = currentDate.getFullYear();
 
 
       </div>
+            <div className="socialMediaLinksContainer">
+              {/* Instagram - external link */}
+              <a
+                href="https://instagram.com/presloaded.academy?igsh=ZWFpbXlqNXNjMHpv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="socialMediaLinks"
+              >
+                <div className="socialMediaIconContainer">
+                  <img src={instagram} alt="Instagram" className="socialMediaIcon" />
+                </div>
+              </a>
+      
+              {/* Facebook - external link */}
+              <a
+                href=" https://www.facebook.com/share/15pNRmmq4J/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="socialMediaLinks"
+              >
+                <div className="socialMediaIconContainer">
+                  <img src={facebook} alt="Facebook" className="socialMediaIcon" />
+                </div>
+              </a>
+      
+              {/* tiktok - external link */}
+              <a
+                href=" https://www.tiktok.com/@presloaded_academy?_t=ZS-8ytdd0ZKci4&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="socialMediaLinks"
+              >
+                <div className="socialMediaIconContainer">
+                  <img src={tiktok} alt="LinkedIn" className="socialMediaIcon" />
+                </div>
+              </a>
+      
+      
+            </div>
             <p className="copyRight">© {currentYear} Presloaded Tech Academy. All rights reserved.</p>
 
     </footer>
